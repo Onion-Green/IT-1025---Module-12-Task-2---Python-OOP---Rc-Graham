@@ -1,0 +1,29 @@
+#Rc Graham, 10-27-24
+#the purpose of this code is to educate burgeoning programmers, such as myself, on how classes and objects function in Python
+
+class Flower: #defines the class: Flower
+    def __init__(self, name): #constructor initializes the self (current object based on the class) and the name  method
+        self.name = name #modifies the name property to call the value of the objects' name
+
+    def grow(self): #defines the grow method within the Flower class
+        print("The " +self.name + " is growing.") #prints the called value of the name of the called object within the class as well as the rest of the statement via the grow function
+
+    def bloom(self): #defines the bloom method within the Flower class
+        print("The " + self.name + " is blooming.") #prints the called value of the name of called object within the class as well as the rest of the statement via the grow function
+
+def main(): #defines the main function
+    flower1 = Flower("Rose") #makes a flower1 object within the Flower class and assigns its name as Rose
+    flower1.grow() #assigns the grow attribute from the Flower class to the flower1 object
+    flower1.bloom() #assigns the bloom attribute from the Flower class to the flower1 object
+    flower2 = Flower("Daisy") #makes a flower2 object within the Flower class and assigns its name as Daisy
+    flower2.grow() #assigns the grow attribute from the Flower class to the flower2 object
+    flower2.bloom() #assigns the bloom attribute from the Flower class to the flower2 object
+    flower3 = Flower("Hibiscus") #makes a flower3 object within the Flower class and assigns its name as Hibiscus
+    flower3.grow() #assigns the grow attribute from the Flower class to the flower3 object
+    flower3.bloom() #assigns the bloom attribute from the Flower class to the flower3 object
+
+
+if __name__ == "__main__": #condition statement to be considered true if the current code is being run as the main program
+  main() #runs the main program
+  
+  #the highlighted segments are methods and attributes
